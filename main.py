@@ -45,9 +45,9 @@ RETRY_DELAY = 5
 def connect_to_mysql():
     try:
         db_connection = mysql.connector.connect(
-            host="185.32.183.90",
+            host="localhost",
             user="unbroken",
-            password="HorizonZeroDawn1@",
+            password="password",
             database="test",
             connect_timeout=connection_timeout, # Set the connect_timeout parameter
             auth_plugin='mysql_native_password'
